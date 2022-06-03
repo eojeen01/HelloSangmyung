@@ -1,0 +1,72 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="#EFEBE9"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_academic_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학수번호"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_professor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="교수"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_school_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학년"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강의명"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_lecture_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강의실"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학과"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강의시간"
+            android:textColor="@color/gray"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
