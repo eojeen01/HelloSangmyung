@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -79,7 +80,6 @@ public class Search_activity extends AppCompatActivity {
         });
         adapter = new CustomAdapter(arrayList, this);
         recyclerView.setAdapter(adapter); // 리사이클러뷰에 어댑터 연결
-
         search_icon = (EditText) findViewById(R.id.search_icon);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -87,6 +87,8 @@ public class Search_activity extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setDisplayShowTitleEnabled(false);//기본 제목을 없애줍니다.
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+
 
         // input창에 검색어를 입력시 "addTextChangedListener" 이벤트 리스너를 정의한다.
         search_icon.addTextChangedListener(new TextWatcher() {
@@ -96,7 +98,6 @@ public class Search_activity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
 
             @Override
@@ -111,7 +112,6 @@ public class Search_activity extends AppCompatActivity {
     }
     // 검색을 수행하는 메소드
     public void search(String charText) {
-
         }
 
     @Override

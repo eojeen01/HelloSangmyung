@@ -25,7 +25,9 @@
             android:exported="true">
 
         </activity>
-        <activity android:name=".Search_activity"/>
+        <activity android:name=".Search_activity"
+            android:windowSoftInputMode="adjustNothing"/>
+
     </application>
 
 </manifest>
