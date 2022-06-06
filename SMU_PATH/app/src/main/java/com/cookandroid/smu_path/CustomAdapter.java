@@ -31,7 +31,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         holder.tv_academic_num.setText("학수번호 :   "+arrayList.get(position).getAcademic_num());
-        holder.tv_department.setText("학과 :   "+String.valueOf(arrayList.get(position).getDepartment()));
+        holder.tv_department.setText("학과 :   "+arrayList.get(position).getDepartment());
         holder.tv_professor.setText("교수 :   "+arrayList.get(position).getProfessor());
         holder.tv_lecture.setText("강의명 :   "+arrayList.get(position).getLecture());
         holder.tv_time.setText("강의시간 :   "+arrayList.get(position).getTime());
