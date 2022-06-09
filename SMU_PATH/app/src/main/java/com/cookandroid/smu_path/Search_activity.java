@@ -1,17 +1,11 @@
 package com.cookandroid.smu_path;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,36 +21,54 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Search_activity extends AppCompatActivity {
     private EditText search_icon;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
-    public ArrayList<Schedule_data> userList ;
-    public ArrayList<Schedule_data> searchList ;
-    public String searchKeyword;
     private ArrayList<Schedule_data> arrayList;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
+    private ArrayList<Schedule_data> list;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_main);
-        initLoadDB();
+
+
+
         recyclerView = findViewById(R.id.recyclerView); // 아이디 연결
         recyclerView.setHasFixedSize(true); // 리사이클러뷰 기존 성능 강화
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        arrayList = new ArrayList<>(); // User 객체를 어댑터 쪽으로 담을 어레이 리스트
+
+        database = FirebaseDatabase.getInstance(); // 파이어베이스 데이터베이스 연동
+
+        databaseReference = database.getReference("Schedule"); // DB 테이블 연결
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                // 파이어베이스 데이터베이스의 데이터를 받아오는 곳
+                arrayList.clear(); // 기존 배열리스트가 존재하지 않게 초기화
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) { //반복문으로 데이터 리스트를 추출
+                    Schedule_data scheduleData = snapshot.getValue(Schedule_data.class); // User 객체에 데이터 담는다
+                    arrayList.add(scheduleData); // 담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준비
+                }
+                adapter.notifyDataSetChanged(); // 리스트 저장 및 새로고침
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                // db를 가져오던 중 에러 발생 시
+                Log.e("MainActivity", String.valueOf(error.toException())); // 에러문 출력
+            }
+        });
+        list = new ArrayList<Schedule_data>();
+        adapter = new CustomAdapter(list, this);
         recyclerView.setAdapter(adapter); // 리사이클러뷰에 어댑터 연결
         search_icon = (EditText) findViewById(R.id.search_icon);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -88,34 +100,34 @@ public class Search_activity extends AppCompatActivity {
         });
 
     }
-
-
-    private void initLoadDB() {
-
-        DataAdapter mDbHelper = new DataAdapter(getApplicationContext());
-        mDbHelper.createDatabase();
-        mDbHelper.open();
-
-
-        // db에 있는 값들을 model을 적용해서 넣는다.
-        userList = (ArrayList<Schedule_data>) mDbHelper.getTableData();
-        adapter = new CustomAdapter(userList, this);
-
-        // db 닫기
-        mDbHelper.close();
-    }
-
-
     // 검색을 수행하는 메소드
     public void search(String charText) {
-        searchKeyword = charText;
-        DataAdapter mDbHelper = new DataAdapter(getApplicationContext());
-        mDbHelper.createDatabase();
-        mDbHelper.open();
-        userList = (ArrayList<Schedule_data>) mDbHelper.getTableData();
-        adapter = new CustomAdapter(userList, this);
-        mDbHelper.close();
-    }
+
+        // 문자 입력시마다 리스트를 지우고 새로 뿌려준다.
+        list.clear();
+
+        // 문자 입력이 없을때는 모든 데이터를 보여준다.
+        if (charText.length() == 0) {
+            list.addAll(arrayList);
+        }
+        // 문자 입력을 할때..
+        else
+        {
+            // 리스트의 모든 데이터를 검색한다.
+            for(int i = 0;i < arrayList.size(); i++)
+            {
+                // arraylist의 모든 데이터에 입력받은 단어(charText)가 포함되어 있으면 true를 반환한다.
+                if (arrayList.get(i).contains(charText))
+                {
+                    // 검색된 데이터를 리스트에 추가한다.
+                    list.add(arrayList.get(i));
+                }
+            }
+        }
+        // 리스트 데이터가 변경되었으므로 아답터를 갱신하여 검색된 데이터를 화면에 보여준다.
+        adapter.notifyDataSetChanged();
+
+        }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
