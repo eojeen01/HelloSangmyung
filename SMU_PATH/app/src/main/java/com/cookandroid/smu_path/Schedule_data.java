@@ -1,5 +1,7 @@
 package com.cookandroid.smu_path;
 
+import java.util.Collection;
+
 public class Schedule_data {
     //Json으로부터 파싱 된 영화 데이터를 담기 위한 클래스입니다.
     //getter/setter 함수를 구현하여 외부에서 각 멤버 변수에 접근 가능하도록 구현합니다.
@@ -67,5 +69,34 @@ public class Schedule_data {
 
     public void setTime(String time) {
         this.Time = time;
+    }
+
+
+
+    public boolean contains(String charText) {
+        if(this.Academic_num.contains(charText)){
+            return true;
+        }
+        else if(this.School_year.contains(charText)){
+            return true;
+        }
+        else if(this.Lecture.contains(charText)){
+            return true;
+        }
+        else if(this.Professor.contains(charText)){
+            return true;
+        }
+        else if(this.Department.contains(charText)){
+            return true;
+        }
+        else if(this.Lecture_room.contains(charText)){
+            return true;
+        }
+        else if(this.Time.contains(charText)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
