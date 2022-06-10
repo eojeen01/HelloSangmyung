@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/eojee/AndroidStudioProjects/SMU_PATH/app/src/main/res/drawable/option1.xml" value="0.1" />
+        <entry key="..\:/Users/eojee/AndroidStudioProjects/SMU_PATH/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/eojee/AndroidStudioProjects/SMU_PATH/app/src/main/res/layout/activity_splash.xml" value="0.20380434782608695" />
+        <entry key="..\:/Users/eojee/Desktop/Git/HelloSangmyung/SMU_PATH/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/eojee/Desktop/Git/HelloSangmyung/SMU_PATH/app/src/main/res/layout/activity_splash.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/eojee/Desktop/Git/HelloSangmyung/SMU_PATH/app/src/main/res/layout/list_item.xml" value="0.1296875" />
+        <entry key="..\:/Users/eojee/Desktop/Git/HelloSangmyung/SMU_PATH/app/src/main/res/layout/search.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/eojee/Desktop/Git/HelloSangmyung/SMU_PATH/app/src/main/res/layout/search_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/eojee/source/SMU_PATH/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
+        <entry key="..\:/Users/eojee/source/SMU_PATH/app/src/main/res/layout/activity_splash.xml" value="0.1296875" />
+        <entry key="..\:/Users/eojee/source/SMU_PATH/app/src/main/res/layout/list_item.xml" value="0.4" />
+        <entry key="..\:/Users/eojee/source/SMU_PATH/app/src/main/res/layout/search_main.xml" value="0.264" />
+        <entry key="..\:/Users/lhwje/AndroidStudioProjects/SMU_PATH/app/src/main/res/layout/activity_camera.xml" value="0.12107396149949341" />
+        <entry key="..\:/Users/lhwje/AndroidStudioProjects/SMU_PATH_Camera/app/src/main/res/layout/activity_camera.xml" value="0.12107396149949341" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106136549412",
+    "firebase_url": "https://smu-path-ced67-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "smu-path-ced67",
+    "storage_bucket": "smu-path-ced67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106136549412:android:47bcf277cef6741f71c0b1",
+        "android_client_info": {
+          "package_name": "com.cookandroid.smu_path"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106136549412-bphie9uhfg767i2vojbauio70j8df656.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9MRIGqLI9CyIIvUXYprIsJSDSCgTL3ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106136549412-bphie9uhfg767i2vojbauio70j8df656.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
