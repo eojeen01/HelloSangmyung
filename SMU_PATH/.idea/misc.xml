@@ -3,9 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/eojee/source/SMU_PATH_0606/app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
-        <entry key="..\:/Users/eojee/source/SMU_PATH_0606/app/src/main/res/layout/list_item.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/eojee/source/SMU_PATH_0606/app/src/main/res/layout/search_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/back.xml" value="0.1" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.1" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/ic_baseline_add.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/ic_baseline_remove.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/ic_main_background.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/option1.xml" value="0.1" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/radius.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/drawable/rectangle.xml" value="0.1355" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/detectedinfo.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/detecteditem.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/login.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/tfe_od_activity_camera.xml" value="0.264" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/tfe_od_camera_connection_fragment_tracking.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/eojee/source/PNU-Pathfinder-master/PNU-Pathfinder-master/android/app/src/main/res/layout/tfe_od_layout_bottom_sheet.xml" value="0.23385416666666667" />
       </map>
     </option>
   </component>

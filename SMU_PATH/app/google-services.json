@@ -34,6 +34,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106136549412:android:e890ace297570bfa71c0b1",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106136549412-far920dm0lgtdgb0mpstfnkcrd7qn16b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.lite.examples.detection",
+            "certificate_hash": "1070c0b81a1920dc46b39d06eb21a0abf2609562"
+          }
+        },
+        {
+          "client_id": "106136549412-bphie9uhfg767i2vojbauio70j8df656.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9MRIGqLI9CyIIvUXYprIsJSDSCgTL3ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106136549412-bphie9uhfg767i2vojbauio70j8df656.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
