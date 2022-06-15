@@ -22,7 +22,7 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_main"
+        android:icon="@mipmap/ic_smu_logo"
         android:label="@string/tfe_od_app_name"
         android:roundIcon="@mipmap/ic_main_round"
         android:largeHeap="true"

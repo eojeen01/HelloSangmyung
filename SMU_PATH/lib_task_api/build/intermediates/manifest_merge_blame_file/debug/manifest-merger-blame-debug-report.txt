@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\eojee\source\PNU-Pathfinder-master\PNU-Pathfinder-master\android\lib_task_api\src\main\AndroidManifest.xml
+8-->C:\Users\lhwje\AndroidStudioProjects\SMU_PATH\lib_task_api\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->C:\Users\eojee\source\PNU-Pathfinder-master\PNU-Pathfinder-master\android\lib_task_api\src\main\AndroidManifest.xml
+9-->C:\Users\lhwje\AndroidStudioProjects\SMU_PATH\lib_task_api\src\main\AndroidManifest.xml
 10
 11</manifest>

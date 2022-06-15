@@ -557,7 +557,7 @@ public abstract class CameraActivity extends AppCompatActivity
       }else if(detectedInfo.trim().equals("mecha")){
         detected.setText("스포츠센터");
       }else if(detectedInfo.trim().equals("unjuk")){
-        detected.setText("송백관");
+        detected.setText("디자인대학");
       }else{
         detected.setText("디자인대학");
       }
